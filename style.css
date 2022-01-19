@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+    font-family: sans-serif;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background:cadetblue;
+        
+    
+}
+
+body{
+    background:cadetblue;
+    padding-left: 25%;
+    padding-right: 300px;
+}
+
+
+
+
+h1{
+    padding-left: none;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-left: 30px;
+    border: 1px solid black ;
+    background-color: rgba(10, 95, 10, 0.966);
+    border-radius: 5px;
+    width: 44vw;
+}
+
+.InfoList{
+    list-style: none;
+    display: flexbox;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.Info{
+    display: flex;
+    
+}
+
+.Rankinfo {
+    width: 5%;
+    background-color: rgba(156, 127, 127, 0);
+    padding-left: 2%;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.Jaap{
+    width: 10%;
+    margin-right: 63px;
+    background-color: rgba(156, 127, 127, 0);
+    color: rgba(137, 43, 226, 0);
+
+}
+
+.PlayerName{
+    width: 60%;
+    background-color: rgba(156, 127, 127, 0);
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.Killsinfo{
+    width: 12%;
+    background-color: rgba(156, 127, 127, 0);
+    color: rgb(255, 255, 255);
+    padding-left: 4%;
+
+    
+}
+
+.Deathsinfo{
+
+    background-color: rgba(156, 127, 127, 0);
+    color: rgb(255, 255, 255);
+    width: 12%;
+    padding-left: 5%;
+
+}
+
+.Stats{
+    width:100%;
+    height: 50px;
+    background:rgba(111, 116, 111, 0);
+    margin-bottom: 15px;
+    display:flex;
+    font-size: 100%;
+  }
+
+.StatsList{
+    list-style: none;
+    display: flexbox;
+    justify-content: center;
+    width: 50%;
+    
+
+}
+
+.Rank{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:5%;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    height:100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+    
+
+}
+
+.RankLogo > img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(97, 96, 96);
+    border: 2px solid rgb(97, 96, 96);
+    
+}
+
+.Player{
+    display: flex;
+    align-items: center;
+    width:54%;
+    height:100%;
+    background-color: rgb(97, 96, 96);
+    color: white;
+    font-size: 15px;
+}
+
+.Kills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:11.5%;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    height:100%;
+    font-size: 13px;
+    padding-right: 1%;
+    border-right: 1px solid black ;
+}
+
+.Deaths{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:11.5%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 13px;
+    padding-left: 1%;
+    
+}
+
+.StatsImage{
+    display: flexbox; 
+    list-style: none;
+    position: absolute;
+    width: 50%;
+    max-width: 250px;
+    margin-left: 1vw;
+
+    
+        
+}
+
+.YourStats{
+    padding-left: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: -11%;
+    margin-bottom: 11px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.651);
+    color: white;
+}
+
+
+.PersonalRank > img{
+    width: 100%;
+    height: 12%;
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+
+.Progres > img{
+    width: 100%;
+    
+    border-radius: 5px;
+    margin-top: 15%;
+    
+}
+
+.PersonalStats{
+    padding-left: 2%;
+    display: flex;
+    align-content: center;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    
+}
+.Position{
+    padding-left: 2%;
+    display: flex;
+    align-content: center;
+    margin-top: 10%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.651);
+    color: white;
+}
+
+    
