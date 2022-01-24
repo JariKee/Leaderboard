@@ -2,20 +2,16 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    
     font-family: sans-serif;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
-    -ms-user-select: none;
-    background:cadetblue;
-        
-    
+    -ms-user-select: none; 
 }
 
 body{
-    background:cadetblue;
+    background:rgb(82, 159, 161);
     padding-left: 25%;
     padding-right: 300px;
 }
@@ -32,7 +28,11 @@ h1{
     background-color: rgba(10, 95, 10, 0.644);
     border-radius: 5px;
     width: 44vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: fantasy;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: rgb(4, 71, 4);
+    
 
 }
 
@@ -53,6 +53,7 @@ h1{
     background-color: rgba(156, 127, 127, 0);
     padding-left: 2%;
     color: rgb(255, 255, 255);
+    font-weight: bold;
     
 
 }
@@ -62,6 +63,7 @@ h1{
     margin-right: 63px;
     background-color: rgba(156, 127, 127, 0);
     color: rgba(137, 43, 226, 0);
+    font-weight: bold;
 
 }
 
@@ -69,15 +71,19 @@ h1{
     width: 60%;
     background-color: rgba(156, 127, 127, 0);
     color: rgb(255, 255, 255);
+    font-weight: bold;
+
     
 
 }
 
 .Killsinfo{
-    width: 12%;
+    width: 15%;
     background-color: rgba(156, 127, 127, 0);
     color: rgb(255, 255, 255);
     padding-left: 4%;
+    font-weight: bold;
+
 
     
 }
@@ -86,8 +92,20 @@ h1{
 
     background-color: rgba(156, 127, 127, 0);
     color: rgb(255, 255, 255);
-    width: 12%;
+    width: 13%;
     padding-left: 5%;
+    font-weight: bold;
+
+
+}
+
+.KDinfo{
+    background-color: rgba(156, 127, 127, 0);
+    color: rgb(255, 255, 255);
+    width: 15%;
+    padding-left: 5%;
+    font-weight: bold;
+
 
 }
 
@@ -106,7 +124,6 @@ h1{
     justify-content: center;
     width: 50%;
     
-
 }
 
 .Rank{
@@ -120,8 +137,6 @@ h1{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     
-    
-
 }
 
 .RankLogo > img{
@@ -135,9 +150,9 @@ h1{
 .Player{
     display: flex;
     align-items: center;
-    width:54%;
+    width:44%;
     height:100%;
-    background-color: rgb(97, 96, 96);
+    background-color: rgba(97, 96, 96, 0.89);
     color: white;
     font-size: 15px;
 }
@@ -163,11 +178,24 @@ h1{
     height:100%;
     background-color: rgba(0, 0, 0, 0.507);
     color: white;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
     font-size: 13px;
     padding-left: 1%;
+    border-right: 1px solid black ;
     
+}
+
+.KD{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:11.5%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    font-size: 13px;
+    padding-left: 1%;
 }
 
 .StatsImage{
@@ -192,6 +220,21 @@ h1{
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.651);
     color: white;
+
+}
+
+.YourRank{
+    padding-left: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: -11%;
+    margin-bottom: 11px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    margin-top: 30%;
+
 }
 
 
@@ -199,14 +242,12 @@ h1{
     width: 100%;
     height: 12%;
     margin-bottom: 15%;
-    margin-top: 5%;
+    
 }
 
-.Progres > img{
+.nextrankimg > img{
     width: 100%;
-    
     border-radius: 5px;
-    margin-top: 15%;
     
 }
 
@@ -220,6 +261,19 @@ h1{
     color: white;
     
 }
+
+.nextrank{
+    padding-left: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    margin-top: 15%;
+}
+
 .Position{
     padding-left: 2%;
     display: flex;
