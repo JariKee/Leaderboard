@@ -1,17 +1,13 @@
-##### TT_Score #####
+##### VT_Leaderbord #####
 
 
 
 # How to use
-To use the script simpely add the TT_Score folder in your resource folder.
+To use the script simpely add the VT_Leaderbord folder in your resource folder.
 
-Then add start TT_Score in your server.cfg
+Then add start VT_Leaderbord in your server.cfg
 
 Don't forget to run the sql!
-
-https://dsc.gg/ttscriptss
-https://dsc.gg/ttscriptss
-https://dsc.gg/ttscriptss
 
 
 
