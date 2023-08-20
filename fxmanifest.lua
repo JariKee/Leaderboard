@@ -1,9 +1,9 @@
 
-description 'TT_Score'
+description 'VT_Leaderboard'
 
 version '1.0.0'
 
-author 'Made by TijmenT#0001/TT Scripts'
+author 'Made by @Storm#9999 | Styling/Frotend: @vladimirdebarie'
 
 fx_version 'adamant'
 games { 'gta5' }

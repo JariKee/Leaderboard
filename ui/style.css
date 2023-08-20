@@ -9,9 +9,11 @@
     -webkit-user-select: none;
     -ms-user-select: none; 
 }
+#leaderboard-ui{
+    display: none;
+}
 
 body{
-    background:rgb(82, 159, 161);
     padding-left: 25%;
 }
 
@@ -212,16 +214,21 @@ h1{
 }
 
 .YourStats{
-    padding-left: 2%;
+    text-align: center;
+    padding: 10%;
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-top: -11%;
+    margin-top: -40%;
     margin-bottom: -5%;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.651);
+    font-size: large;
+    background-color: rgba(158, 43, 43, 0.651);
     color: white;
 
+}
+.YourStats:hover{
+    background-color: rgba(158, 43, 43, 0.851);
 }
 
 .YourRank{

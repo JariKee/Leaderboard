@@ -1,9 +1,31 @@
 local deathCount = 0
 local killCount = 0
 
+function OpenLeaderboard(killCount, deathCount, TopUsers)
+    SendNUIMessage({
+        toggleUI = true,
+		killCount1 = killCount,
+		deathCount1 = deathCount,
+        TopUsers1 = TopUsers
+    })
+    SetNuiFocus(true, true)
+end
+
+RegisterNUICallback("CloseCrosshairConfig", function(data)
+    CloseCrosshairConfig()
+end)
+
+function CloseCrosshairConfig()
+    SetNuiFocus(false, false)
+end
+
+RegisterCommand("leaderboard", function()
+   TriggerServerEvent('vt_leaderboard:getTopStats')
+   Citizen.Wait(100)
+   OpenLeaderboard(killCount, deathCount, TopUsers)
+end, false)
 
 Citizen.CreateThread(function()
-
 
 	
 	RegisterCommand('score', function()
@@ -14,17 +36,23 @@ Citizen.CreateThread(function()
 		})
 	end)
 	
+     RegisterNetEvent('vt_leaderboard:sendTopStats')
+        AddEventHandler('vt_leaderboard:sendTopStats', function(topUsers)
+            TopUsers = topUsers
+        end)
+   
+        
 	local myid = GetPlayerServerId(NetworkGetEntityOwner(GetPlayerPed(-1)))
-	TriggerServerEvent('tt_score:findkillcount', myid)
-	TriggerServerEvent('tt_score:finddeathcount', myid)
+	TriggerServerEvent('vt_leaderboard:findkillcount', myid)
+	TriggerServerEvent('vt_leaderboard:finddeathcount', myid)
 	
-	RegisterNetEvent('tt_score:retrievekillcount')
-	AddEventHandler('tt_score:retrievekillcount', function(data)
+	RegisterNetEvent('vt_leaderboard:retrievekillcount')
+	AddEventHandler('vt_leaderboard:retrievekillcount', function(data)
 	killCount = data
 	end)
 	
-	RegisterNetEvent('tt_score:retrievedeathcount')
-	AddEventHandler('tt_score:retrievedeathcount', function(data2)
+	RegisterNetEvent('vt_leaderboard:retrievedeathcount')
+	AddEventHandler('vt_leaderboard:retrievedeathcount', function(data2)
 	deathCount = data2
 	end)
 
@@ -49,7 +77,7 @@ if GetEntityHealth(victimid) == 0 then
 if killerid == PlayerPedId() then
 	if killerid ~= victimid then
 	killCount = killCount + 1
-	TriggerServerEvent('tt_score:AddKill')
+	TriggerServerEvent('vt_leaderboard:AddKill')
 	Citizen.Wait(5000)
 	end
 end
@@ -62,7 +90,7 @@ AddEventHandler('gameEvent:PlayerDied', function(victimid, killerid, weaponHash)
 	if victimid == PlayerPedId() then
 		if killerid ~= victimid then
 		deathCount = deathCount + 1
-		TriggerServerEvent('tt_score:AddDeath')
+		TriggerServerEvent('vt_leaderboard:AddDeath')
 		Citizen.Wait(5000)
 		end
 	end
